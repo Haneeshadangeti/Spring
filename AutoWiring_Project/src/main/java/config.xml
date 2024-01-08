@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.springframework.org/schema/beans
+  https://www.springframework.org/schema/beans/spring-beans.xsd">
+  <bean class="com.learn.Spring.AutoWiring.byConstructor.AutoWiring_Project.Car" id="c" autowire="byName">
+  </bean>
+  <bean class="com.learn.Spring.AutoWiring.byConstructor.AutoWiring_Project.Driver" id="d">
+  <property name="id" value="12"></property>
+  <property name="name" value="Ajay"></property>
+  <property name="age" value="41"></property>
+  </bean>
+  <!--  
+   <bean class="com.learn.Spring.AutoWiring.byConstructor.AutoWiring_Project.Driver" id="d2">
+    <property name="id" value="13"></property>
+  <property name="name" value="Amit"></property>
+  <property name="age" value="45"></property>
+  </bean>
+   <bean class="com.learn.Spring.AutoWiring.byConstructor.AutoWiring_Project.Driver" id="d3">
+    <property name="id" value="14"></property>
+  <property name="name" value="Anuj"></property>
+  <property name="age" value="33"></property>
+  </bean>
+  -->
+  <bean class="com.learn.Spring.AutoWiring.byConstructor.AutoWiring_Project.University" id="u" autowire="byName">
+  </bean>
+  <bean class="com.learn.Spring.AutoWiring.byConstructor.AutoWiring_Project.professor" id="p">
+   <property name="P_id" value="123"></property>
+  <property name="P_name" value="Praveen"></property>
+  <property name="P_subject" value="Maths"></property>
+  </bean>
+  <!--  
+  <bean class="com.learn.Spring.AutoWiring.byConstructor.AutoWiring_Project.professor" id="p2">
+     <property name="P_id" value="234"></property>
+  <property name="P_name" value="Prakesh"></property>
+  <property name="P_subject" value="Science"></property>
+  </bean>
+  -->
+   </beans>

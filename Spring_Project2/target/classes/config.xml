@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <beans xmlns="http://www.springframework.org/schema/beans"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.springframework.org/schema/beans
+  https://www.springframework.org/schema/beans/spring-beans.xsd">
+  
+  <!-- setter injection -->
+  <bean class="com.learn.Spring.Example.Spring_Project2.Laptop" id="l1">
+  <property name="serial_number" value="11"></property>
+  <property name="Brand" value="hp"></property>
+  <property name="price" value="60000"></property></bean>
+  
+  <bean class="com.learn.Spring.Example.Spring_Project2.Laptop" id="l2">
+  <property name="serial_number" value="12"></property>
+  <property name="Brand" value="dell"></property>
+  <property name="price" value="50000"></property></bean>
+  
+  <!-- constructor injection -->
+  <bean class="com.learn.Spring.Example.Spring_Project2.Laptop" id="l3">
+  <constructor-arg value="13"></constructor-arg>
+  <constructor-arg value="lenovo"></constructor-arg>
+  <constructor-arg value="55000"></constructor-arg>
+  </bean>
+
+  </beans>

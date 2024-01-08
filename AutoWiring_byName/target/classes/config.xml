@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.springframework.org/schema/beans
+  https://www.springframework.org/schema/beans/spring-beans.xsd">
+  <bean class=" com.learn.Spring.AutoWiring.byName.AutoWiring_Spring.Mobile1" id="m1">
+  <constructor-arg value="one-plus"></constructor-arg>
+  <constructor-arg value="8"></constructor-arg>
+  <constructor-arg value="30000"></constructor-arg>
+  </bean>
+  <bean class="com.learn.Spring.AutoWiring.byName.AutoWiring_Spring.Mobile1" id="m">
+    <constructor-arg value="Samsung"></constructor-arg>
+  <constructor-arg value="16"></constructor-arg>
+  <constructor-arg value="45000"></constructor-arg> 
+  </bean>
+  <bean class="com.learn.Spring.AutoWiring.byName.AutoWiring_Spring.person1" id="p" autowire="byName">
+ 
+
+  </bean>
+  </beans>

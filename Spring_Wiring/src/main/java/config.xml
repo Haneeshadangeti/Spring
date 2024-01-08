@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.springframework.org/schema/beans
+  https://www.springframework.org/schema/beans/spring-beans.xsd">
+  <bean class="com.learn.Spring.Example.Spring_Wiring.Trainer" id="t">
+  <property name="T_id" value="1"></property>
+  <property name="T_name" value="Ayush"></property>
+  </bean>
+  
+   <bean class="com.learn.Spring.Example.Spring_Wiring.Kodnest_Classes" id="kod">
+   <property name="tr" ref="t"></property>
+   </bean>
+
+  </beans>
